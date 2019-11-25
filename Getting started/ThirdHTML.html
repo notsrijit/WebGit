@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Making Forms</title>
+</head>
+<body>
+
+	<!-- action -> where to send the data (normally own backend)-->
+	<!-- method -> type of HTTP method (get/post) -->
+	<!-- name is req in input to send data to server. if not set anything, it sends default input. to send custom input, use value tag -->
+
+	<!-- <h2>Sign in to your account </h2>
+	<form action="" method="">
+		<label>
+			Username: 
+			<input name="username" type="text" placeholder="username" required>
+		</label>
+		<Label>
+			Password: 
+			<input name="password" type="password" placeholder="password" required>
+		</Label>
+		<button>Login</button>
+	</form> -->
+
+	<!-- Radio buttons, checkboxes and textboxes -->
+
+	<h2>Kolkata Pet Shop</h2>
+
+	<h4>Do you prefer Dogs or Cats?</h4>
+
+	<form>
+		<!-- Radio Buttons -->
+		<label>Dogs: <input name="petchoice" type="radio" value="DOGS"></label>
+
+		<label>Cats: <input name="petchoice" type="radio" value="CATS"></label>
+
+		<p>What color do you like?</p>
+
+		<!-- Dropdown list -->
+		<select name="color" required>
+			<option>Brown</option>
+			<option>Black</option>
+			<option>White</option>
+			<option>Golden</option>
+		</select>
+
+		<p>What pet did you own earlier?</p>
+
+		<!-- Checkboxes -->
+		<label>Fish <input type="checkbox" name="oldpets" value="FISH"></label>
+		<label>Bird <input type="checkbox" name="oldpets" value="BIRD"></label>
+		<label>None <input type="checkbox" name="oldpets" value="NONE"></label>
+
+		<p>Tell us about why you want a fluffy companion</p>
+
+		<!-- Text Area -->
+		<textarea rows="10" cols="50" name="paragraph" required></textarea>
+	
+		<p><button>Submit</button></p>
+
+	</form>
+
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+	background: url(https://www.hdwallpapers.net/previews/deep-void-973.jpg);
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	/*to make the image cover the entire page*/
+}
+h1{
+	color: red;
+	border: 3px orange solid;
+}
+h3{
+	color: brown;
+}
+h4{
+	color: purple;
+}
+li{
+	color: magenta;
+}

@@ -1,0 +1,54 @@
+/*while using "id" in HTMl, its corresponding CSS begins with a # ,
+ keeping in mind "id" is for only one element at an instance. 
+ For multiple elements, "class" is used, whose CSS is "." yes, just a dot*/
+
+#ukulele{
+	background: brown;
+}
+.buy{
+	text-decoration: line-through;
+}
+
+/*Element*/
+li {
+
+}
+/*class*/
+.hello {
+
+}
+/*id*/
+#name {
+
+}
+
+/*Star*/
+
+* {
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selector*/
+
+li a {
+	color: red;
+}
+
+/*Adjacent Selector*/
+
+h4 + ul {
+	border: 4px solid red;
+}
+
+
+/*Attribute Selector*/
+
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+/*nth of type*/
+
+li:nth-of-type(odd){
+	background: purple;
+}

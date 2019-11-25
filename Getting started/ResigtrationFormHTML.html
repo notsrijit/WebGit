@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+
+	<h2>Register</h2>
+
+	<form>
+		<!-- Name input -->
+		<p>
+			<label>First name: <input type="text" name="firstname" placeholder="John" required=""></label>
+			<label>Last name: <input type="text" name="lastname" placeholder="Doe" required=""></label>
+		</p>
+		<!-- Gender input -->
+		<p>
+			<label>Male <input type="radio" name="sex" value="MALE"></label>
+			<label>Female <input type="radio" name="sex" value="FEMALE"></label>
+			<label>Other <input type="radio" name="sex" value="OTHER"></label>
+		</p>
+		<!-- Password input -->
+		<p>
+			<label>Email: <input type="email" name="email" placeholder="your@email" required=""></label>
+			<label>Password: <input type="password" name="password" placeholder="your password" autocomplete="current-password" pattern=".{5,8}" title="5 to 8 characters" required="" ></label>
+		</p>
+		<!-- Date Picker -->
+		<!-- Attributes "selected" and "disabled" are used for obvious reasons, so that the words Month, Day and Year are not sent to the server. Value can or cannot be set to 0, just personal preference -->
+		<p>
+			<label> Birthday:
+				<select name="month" required="">
+					<option value="0" selected disabled>Month</option>
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>
+				<select name="day" required="">
+					<option value="0" selected disabled>Day</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+					<option>6</option>
+					<option>7</option>
+					<option>8</option>
+					<option>9</option>
+					<option>10</option>
+					<option>11</option>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+					<option>15</option>
+					<option>16</option>
+					<option>17</option>
+					<option>18</option>
+					<option>19</option>
+					<option>20</option>
+					<option>21</option>
+					<option>22</option>
+					<option>23</option>
+					<option>24</option>
+					<option>25</option>
+					<option>26</option>
+					<option>27</option>
+					<option>28</option>
+					<option>29</option>
+					<option>30</option>
+					<option>31</option>
+				</select>
+				<select name="year" required="">
+					<option value="0" selected disabled>Year</option>
+					<option>1996</option>
+					<option>1997</option>
+					<option>1998</option>
+					<option>1999</option>
+					<option>2000</option>
+				</select>
+			</label>
+		</p>
+		<!-- Terms and conditions -->
+		<p>
+			<label>I agree to the terms and conditions <input type="checkbox" name="conditions" required=""></label>
+		</p>
+		<!-- Submit button -->
+		<button>Submit</button>
+
+	</form>
+
+</body>
+</html>
