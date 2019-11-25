@@ -1,0 +1,18 @@
+$primaryBtn: rgb(118, 75, 235);
+$textColor: rgb(20, 20, 20);
+
+@import "./header";
+
+.contact {
+  button {
+    background: $primaryBtn;
+  }
+
+  @include flexMiddle(row, pink);
+
+  // To use all the styles of the header;
+  // @extend header;
+}
+
+// Style sheets work from Up to Down
+// EVerything you have down will be preferred and will overwrite above

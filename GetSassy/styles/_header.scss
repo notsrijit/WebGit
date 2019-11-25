@@ -1,0 +1,23 @@
+@mixin flexMiddle($direction, $background) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background: $background;
+}
+
+header {
+  @include flexMiddle(column, lightcoral);
+
+  height: 50vh;
+  color: $textColor;
+  button {
+    background: $primaryBtn;
+    &:hover {
+      background: red; //adding hover and focus
+    }
+    // &::after {
+    //   content: "Suppp!";
+    // }
+  }
+}
